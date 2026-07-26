@@ -2,7 +2,7 @@ class Solution {
 public:
     int reverse(int x) {
         long long reverse=0;
-        while(x>0||x<0){
+        while(x!=0){
             int remainder=x%10;
             reverse=(reverse*10)+remainder;
             if (reverse>INT_MAX  || reverse<INT_MIN ){
