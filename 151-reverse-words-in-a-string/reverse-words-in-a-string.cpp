@@ -11,12 +11,10 @@ public:
                 i++;
             }
             reverse(word.begin(), word.end());
-            if (!word.empty()) {
-                if (!ans.empty())
-                    ans += " ";
-                ans += word;
+            if (word.length()>0) {
+                ans +=" "+ word;
             }
         }
-        return ans;
+        return ans.substr(1);
     }
 };
